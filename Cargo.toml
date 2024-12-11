@@ -1,0 +1,10 @@
+[package]
+name = "opcc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alloy-primitives = "0.8.15"
+clap = "4.5.23"
+eyre = "0.6.12"
+op-alloy-protocol = "0.8.0"
