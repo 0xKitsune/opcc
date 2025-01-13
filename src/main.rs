@@ -23,7 +23,7 @@ fn main() -> eyre::Result<()> {
         9 => BrotliLevel::Brotli9,
         10 => BrotliLevel::Brotli10,
         11 => BrotliLevel::Brotli11,
-        _ => panic!("Invalid Brotli compression level"),
+        _ => unreachable!(),
     };
 
     let data = if let Some(file_path) = args.file {
