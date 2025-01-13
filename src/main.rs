@@ -35,7 +35,8 @@ fn main() -> eyre::Result<()> {
         unreachable!();
     };
 
-    println!("Data size: {:?}", data.len());
+    println!("");
+    println!("Original size: {:?}", data.len());
     let compressed_data = compress_brotli(&data, brotli_level)?;
     println!("Compressed size: {:?}", compressed_data.len());
 
